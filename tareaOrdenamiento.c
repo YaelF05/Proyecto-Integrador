@@ -11,31 +11,31 @@ int main(void){
     int opcion;
     
 
-    printf ("Ingrese la cantidad de números que contendrá el vector: ");
+    printf ("Ingrese la cantidad de nÃºmeros que contendrÃ¡ el vector: ");
     scanf ("%d", &n);
 
     int vector[n];
-    printf ("Ingrese los números del vector:\n");
+    printf ("Ingrese los nÃºmeros del vector:\n");
     for (int i = 0; i < n; i++){
         scanf ("%d", &vector[i]);
     }
 
     while (opcion != 4){
-    printf ("Seleccione el método de ordenamiento:\n");
-    printf ("1. Método de burbuja\n");
-    printf ("2. Método de inserción\n");
-    printf ("3. Método de selección\n");
+    printf ("Seleccione el mÃ©todo de ordenamiento:\n");
+    printf ("1. MÃ©todo de burbuja\n");
+    printf ("2. MÃ©todo de inserciÃ³n\n");
+    printf ("3. MÃ©todo de selecciÃ³n\n");
     printf ("4. Salir\n");
     scanf ("%d", &opcion);
 
     switch (opcion){
-    case 1: printf("\nMétodo de burbuja\n");
+    case 1: printf("\nMÃ©todo de burbuja\n");
       bubbleSort(vector, n);
       break;
-    case 2: printf("\nMétodo de inserción\n");
+    case 2: printf("\nMÃ©todo de inserciÃ³n\n");
       insertionSort(vector, n);
       break;
-    case 3: printf("\nMétodo de selección\n");
+    case 3: printf("\nMÃ©todo de selecciÃ³n\n");
       selectionSort(vector, n);
    }
 
